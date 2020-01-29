@@ -8,11 +8,12 @@ import {
   Link
 } from "react-router-dom";
 import './App.css';
-import Search from './Components/Search';
+//import Search from './Components/Search';
 import About from './Components/About';
 import Home from './Components/Home';
 import Data from './Components/Data';
 import PullData from './Containers/MainData'
+import Card from './Components/Card-Header';
 
 function App() {
 
@@ -42,7 +43,7 @@ function App() {
           <ul>
             {data.hits.map(item => (
               <li key={item.objectID}>
-                <a href={item.url}>{item.title}</a>
+                <Card item={item} />
               </li>
             ))}
           </ul>
