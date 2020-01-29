@@ -12,6 +12,14 @@
   color: black;
 }
 
+.nav li{
+  text-decoration: none;
+  list-style: none;
+  display: inline;
+  margin: 10px;
+  float: left;
+}
+
 .lightUp {
   color: pink;
 }
